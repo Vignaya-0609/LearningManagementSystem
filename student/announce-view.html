@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+    <link rel="icon" href="../assets/images/icons8/course.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- side navbar -->
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="../assets/images/logo.png" alt="">
+            </div>
+            <span class="logo">Skillo</span>
+        </div>
+        <div class="links">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa fa-home"></i><span class="nav-name">Dashboard</span></a></li>
+                <li><a href="enrolled-courses.html"><i class="fa fa-graduation-cap"></i><span class="nav-name">Enrolled Courses</span></a></li>
+                <li><a href="stu-assess.html"><i class="fa fa-list-alt"></i><span class="nav-name">Assessment</span></a></li>
+                <li><a href="announce-view.html"><i class="fa fa-comments"></i><span class="nav-name">Communication</span></a></li>
+            </ul>
+            <ul class="logout-links">
+                <li><a href="../index.html"><i class="fa fa-sign-out"></i><span class="nav-name">Logout</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <section class="header">
+        <div class="bar">
+            <i class="fa fa-bars sidebar-toggle"></i>
+        </div>
+        <div class="welcome-note">
+            <h3>Welcome Student!</h3>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-area" placeholder="search">
+            <i class="fa fa-search"></i>
+        </div>   
+    </section>
+    <main class="content">
+        <!-- communication announce -->
+             <section class="communication">
+                <div class="communication-heading">
+                    <div class="communication-title">
+                        <h2>Communication</h2>
+                    </div>
+                    <div class="communication-title">
+                        <a href="announce-view.html" class="active">Announcement</a>
+                        <a href="chat-stu.html">Chat</a>
+                    </div>
+                </div>
+             </section>
+             <section class="announce-view">
+                <div class="view-announce">
+                    <h4>Latest</h4>
+                    <div class="latest">
+                        <div class="from-course">
+                            <div class="courseDetail">
+                                <h3>Course Name</h3>
+                                <p>HTML: Beginner Level</p>
+                            </div>
+                            <div class="courseDetail">
+                                <h3>Instructor</h3>
+                                <p>Dev</p>
+                            </div>
+                        </div>
+                        <p><b>Announcement: </b>Hiii Team, get ready for your HTML Assessment</p>
+                    </div>
+                </div>
+             </section>
+             <section class="announce-view">
+                <div class="view-announce">
+                    <h4>Announcement</h4>
+                    <div class="latest">
+                        <div class="from-course">
+                            <div class="courseDetail">
+                                <h3>Course Name</h3>
+                                <p>HTML: Beginner Level</p>
+                            </div>
+                            <div class="courseDetail">
+                                <h3>Instructor</h3>
+                                <p>Dev</p>
+                            </div>
+                        </div>
+                        <p><b>Announcement: </b>Hiii Team, get ready for your HTML Assessment</p>
+                    </div>
+                    <hr class="line">
+                    <div class="latest">
+                        <div class="from-course">
+                            <div class="courseDetail">
+                                <h3>Course Name</h3>
+                                <p>HTML: Beginner Level</p>
+                            </div>
+                            <div class="courseDetail">
+                                <h3>Instructor</h3>
+                                <p>Dev</p>
+                            </div>
+                        </div>
+                        <p><b>Announcement: </b>Hiii Team, get ready for your HTML Assessment</p>
+                    </div>
+                    <hr class="line">
+                    <div class="latest">
+                        <div class="from-course">
+                            <div class="courseDetail">
+                                <h3>Course Name</h3>
+                                <p>HTML: Beginner Level</p>
+                            </div>
+                            <div class="courseDetail">
+                                <h3>Instructor</h3>
+                                <p>Dev</p>
+                            </div>
+                        </div>
+                        <p><b>Announcement: </b>Hiii Team, get ready for your HTML Assessment</p>
+                    </div>
+                </div>
+             </section>
+    </main>   
+    <script>
+        const body=document.querySelector("body"),
+        sidebar=document.querySelector("nav"),
+        sidebarToggle=body.querySelector(".sidebar-toggle");
+   
+        sidebarToggle.addEventListener("click",()=>{
+            sidebar.classList.toggle("close");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+    <link rel="icon" href="../assets/images/icons8/course.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="../assets/images/logo.png" alt="">
+            </div>
+            <span class="logo">Skillo</span>
+        </div>
+        <div class="links">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa fa-home"></i><span class="nav-name">Dashboard</span></a></li>
+                <li><a href="course-manage.html"><i class="fa fa-graduation-cap"></i><span class="nav-name">Course Management</span></a></li>
+                <li><a href="user-manage.html"><i class="fa fa-user"></i><span class="nav-name">User Management</span></a></li>
+                <li><a href="admin-report.html"><i class="fa fa-window-restore"></i><span class="nav-name">Report</span></a></li>
+            </ul>
+            <ul class="logout-links">
+                <li><a href="../index.html"><i class="fa fa-sign-out"></i><span class="nav-name">Logout</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <section class="header">
+        <div class="bar">
+            <i class="fa fa-bars sidebar-toggle"></i>
+        </div>
+        <div class="welcome-note">
+            <h3>Welcome Admin!</h3>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-area" placeholder="search">
+            <i class="fa fa-search"></i>
+        </div>   
+    </section>
+    <main class="content">
+        <!-- manage course -->
+        <section class="course-management">
+            <div class="heading">
+                <div class="title">
+                    <h2>Course Management</h2>
+                </div>
+                <div class="add-btn">
+                    <a href="add-course.html">Add Course</a>
+                </div>
+            </div>
+            <br>
+            <!-- course card -->
+            <div class="course-card-container">
+                <div class="course-card">
+                    <div class="card-title html-card" style="cursor: pointer;" onclick="location.href='html-course.html'">
+                        
+                    </div>
+                    <div class="description">
+                        <div class="desc-title">
+                            <h4><a href="html-course.html">HTML: Beginner Level</a></h4>
+                        </div>
+                        <div class="desc-content">
+                            <p>It is one of the most basic building blocks of every website.</p>
+                        </div>
+                        <div class="desc-duration">
+                            <div class="duration">
+                                <h5>Duration</h5>
+                                <p>40 hrs</p>
+                            </div>
+                        </div>
+                        <div class="manage-btn">
+                            <a href="#" class="btn" id="myBtn"> Edit</a>
+                            <a href="#" class="btn" onclick="document.querySelector('.delete_cont').style.display = 'block'"> Delete</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-title css-card" style="cursor: pointer;" onclick="location.href='html-course.html'">
+                        
+                    </div>
+                    <div class="description">
+                        <div class="desc-title">
+                            <h4><a href="#">CSS</a></h4>
+                        </div>
+                        <div class="desc-content">
+                            <p>Style sheet language used for describing the presentation.</p>
+                        </div>
+                        <div class="desc-duration">
+                            <div class="duration">
+                                <h5>Duration</h5>
+                                <p>60 hrs</p>
+                            </div>
+                            
+                        </div>
+                        <div class="manage-btn">
+                            <a href="#" class="btn" id="myBtn"> Edit</a>
+                            <a href="#" class="btn"> Delete</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-title js-card" style="cursor: pointer;" onclick="location.href='html-course.html'">
+                    </div>
+                    <div class="description">
+                        <div class="desc-title">
+                            <h4><a href="#">Javascript</a></h4>
+                        </div>
+                        <div class="desc-content">
+                            <p>JavaScript is the Programming Language for the Web.</p>
+                        </div>
+                        <div class="desc-duration">
+                            <div class="duration">
+                                <h5>Duration</h5>
+                                <p>150 hrs</p>
+                            </div>
+                        </div>
+                        <div class="manage-btn">
+                            <a href="#" class="btn" id="myBtn"> Edit</a>
+                            <a href="#" class="btn"> Delete</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-title react-card" style="cursor: pointer;" onclick="location.href='html-course.html'">
+                       
+                    </div>
+                    <div class="description">
+                        <div class="desc-title">
+                            <h4><a href="#">ReactJS</a></h4>
+                        </div>
+                        <div class="desc-content">
+                            <p>It works best to build user interfaces by sections and components.</p>
+                        </div>
+                        <div class="desc-duration">
+                            <div class="duration">
+                                <h5>Duration</h5>
+                                <p>100 hrs</p>
+                            </div>
+                        </div>
+                        <div class="manage-btn">
+                            <a href="#" class="btn" id="myBtn"> Edit</a>
+                            <a href="#" class="btn"> Delete</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Edit Course</h2>
+              <div class="form-addCourse">
+                <form class="form-list">
+                    <div class="column">
+                        <div class="input-box">
+                            <label class="required">Course Name</label>
+                            <input type="text" placeholder="New Course Name" value="HTML: Beginner Level" required>
+                        </div>
+                        <div class="input-box">
+                            <label class="required">Duration</label>
+                            <input type="number" placeholder="Number in hrs" value="40" required>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="input-box">
+                            <label class="required">Start Date</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="input-box">
+                            <label class="required">End Date</label>
+                            <input type="date" required>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="input-box">
+                            <label class="required">Course Instructor</label>
+                            <div class="select-box">
+                                <select required>
+                                  <option hidden class="fade">Dev</option>
+                                  <option>Dev</option>
+                                  <option>Vichu</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <label class="required">Technology Stack</label>
+                            <input type="text" placeholder="Tech stacks" value="html, front-end development" required>
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="input-box">
+                            <label class="required">Description</label>
+                            <input type="text" placeholder="Short Description" value="It is one of the most basic building blocks of every website." required>
+                        </div>
+                        <div class="input-box">
+                            <div class="upload">
+                                <label class="required">Cover Photo</label>
+                                <input type="file" class="upload" value="html.png" required>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="btn-add">
+                        <button>Update</button>
+                    </div>
+                </form>    
+            </div>
+          </div>
+          </div>
+          <!-- delete popup -->
+          <div class="delete_cont">
+            <span onclick="document.querySelector('.delete_cont').style.display = 'none'" class="closedel" title="close">&times;</span>
+            <div class="delete_txt">
+              <p>Are you sure you want to delete this Course?</p>
+            </div>
+            <div onclick="document.querySelector('.delete_cont').style.display = 'none'" class="delete_actions">
+              <button class="cancel">
+                Cancel
+              </button>
+              <button class="delete-mydelbtn">
+                Delete
+              </button>
+            </div>
+          </div>
+    </main>   
+    <script>
+        const body=document.querySelector("body"),
+        sidebar=document.querySelector("nav"),
+        sidebarToggle=body.querySelector(".sidebar-toggle");
+    
+        sidebarToggle.addEventListener("click",()=>{
+            sidebar.classList.toggle("close");
+        });
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

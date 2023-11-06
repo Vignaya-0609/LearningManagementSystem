@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+    <link rel="icon" href="../assets/images/icons8/course.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- side navbar -->
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="../assets/images/logo.png" alt="">
+            </div>
+            <span class="logo">Skillo</span>
+        </div>
+        <div class="links">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa fa-home"></i><span class="nav-name">Dashboard</span></a></li>
+                <li><a href="course-delivery.html"><i class="fa fa-graduation-cap"></i><span class="nav-name">Course Deliverables</span></a></li>
+                <li><a href="create-assess.html"><i class="fa fa-list-alt"></i><span class="nav-name">Assessment</span></a></li>
+                <li><a href="report.html"><i class="fa fa-window-restore"></i><span class="nav-name">Report</span></a></li>
+                <li><a href="announce.html"><i class="fa fa-comments"></i><span class="nav-name">Communication</span></a></li>
+            </ul>
+            <ul class="logout-links">
+                <li><a href="../index.html"><i class="fa fa-sign-out"></i><span class="nav-name">Logout</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <section class="header">
+        <div class="bar">
+            <i class="fa fa-bars sidebar-toggle"></i>
+        </div>
+        <div class="welcome-note">
+            <h3>Welcome Instructor!</h3>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-area" placeholder="search">
+            <i class="fa fa-search"></i>
+        </div>   
+    </section>
+    <main class="content">
+        <!-- html add question -->
+      <section class="view-scores">
+        <div class="assess-heading">
+            <div class="assess-title">
+                <h2>HTML Basics</h2>
+            </div>
+        </div>
+        <div class="subtitle">
+            <p><a href="create-assess.html">Assessment </a>/ <a href="add-assess.html" class="active">HTML Basics</a></p>
+        </div>
+      </section>
+      <section class="qu-area">
+        <div class="qu-heading">
+            <h2>Add Questions</h2>
+        </div>
+        <div class="tab">
+            <button class="tablinks" onclick="openChoice(event, 'single')">Single Choice</button>
+            <button class="tablinks" onclick="openChoice(event, 'multi')">Multipe Choice</button>
+            <button class="tablinks" onclick="openChoice(event, 'descriptive')">Descriptive Type</button>
+          </div>
+          
+          <div id="single" class="tabcontent">
+            <table class="single-qu">
+                <tr>
+                    <td style="width:70%">
+                        <h4 class="required">Question</h4>
+                        <input type="text" required>
+                    </td>
+                    <td style="width:15%; text-align: center;">
+                        <h4 class="required">Mark</h4>
+                        <input type="number" required>
+                    </td>
+                    <td style="width:15%;text-align: center;">
+                        <h4 class="required">Weightage</h4><br>
+                        <h5>Out of 100%</h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="* choice 1" required>
+                    </td>
+                    <td style="text-align: center;">
+                        <input type="checkbox">
+                    </td>
+                    <td style="text-align: center;">
+                        <select class="choose">
+                            <option>select</option>
+                            <option>100%</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="* choice 2" required>
+                    </td>
+                    <td style="text-align: center;">
+                        <input type="checkbox">
+                    </td>
+                    <td style="text-align: center;">
+                        <select class="choose">
+                            <option>select</option>
+                            <option>100%</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="choice 3">
+                    </td>
+                    <td style="text-align: center;">
+                        <input type="checkbox">
+                    </td>
+                    <td style="text-align: center;">
+                        <select class="choose">
+                            <option>select</option>
+                            <option>100%</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="choice 4">
+                    </td>
+                    <td style="text-align: center;">
+                        <input type="checkbox">
+                    </td>
+                    <td style="text-align: center;">
+                        <select class="choose">
+                            <option>select</option>
+                            <option>100%</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td style="display:flex;align-items:end;justify-content:end"><button class="add-new-choice">&plus;</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td style="text-align: center;"><button class="qu-add">Add</button></td>
+                </tr>
+            </table>
+          </div>
+          
+          <div id="multi" class="tabcontent">
+            <table class="single-qu">
+                <tr>
+                    <td style="width:70%">
+                        <h4 class="required">Question</h4>
+                        <input type="text" required>
+                    </td>
+                    <td style="width:15%; text-align: center;">
+                        <h4 class="required">Mark</h4>
+                        <input type="number" required>
+                    </td>
+                    <td style="width:15%;text-align: center;">
+                        <h4 class="required">Weightage</h4><br>
+                        <h5>Out of 100%</h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="* choice 1" required>
+                    </td>
+                    <td style="text-align: center;">
+                        <input type="checkbox">
+                    </td>
+                    <td style="text-align: center;">
+                        <input type="number">
+                        <!-- <select class="choose">
+                            <option>select</option>
+                            <option>20%</option>
+                            <option>25%</option>
+                            <option>30%</option>
+                            <option>50%</option>
+                            <option>75%</option>
+                            <option>100%</option>
+                        </select> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="* choice 2" required>
+                    </td>
+                    <td style="text-align: center;">
+                        <input type="checkbox">
+                    </td>
+                    <td style="text-align: center;">
+                        <input type="number">
+                        <!-- <select class="choose">
+                            <option>select</option>
+                            <option>20%</option>
+                            <option>25%</option>
+                            <option>30%</option>
+                            <option>50%</option>
+                            <option>75%</option>
+                            <option>100%</option>
+                        </select> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="* choice 3" required>
+                    </td>
+                    <td style="text-align: center;">
+                        <input type="checkbox">
+                    </td>
+                    <td style="text-align: center;">
+                        <input type="number">
+                        <!-- <select class="choose">
+                            <option>select</option>
+                            <option>20%</option>
+                            <option>25%</option>
+                            <option>30%</option>
+                            <option>50%</option>
+                            <option>75%</option>
+                            <option>100%</option>
+                        </select> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="* choice 4" required>
+                    </td>
+                    <td style="text-align: center;">
+                        <input type="checkbox">
+                    </td>
+                    <td style="text-align: center;">
+                        <input type="number" required>
+                        <!-- <select class="choose">
+                            <option>select</option>
+                            <option>20%</option>
+                            <option>25%</option>
+                            <option>30%</option>
+                            <option>50%</option>
+                            <option>75%</option>
+                            <option>100%</option>
+                        </select> -->
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td style="display:flex;align-items:end;justify-content:end"><button class="add-new-choice">&plus;</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td style="text-align: center;"><button class="qu-add">Add</button></td>
+                </tr>
+            </table>
+          </div>
+          
+          <div id="descriptive" class="tabcontent">
+            <table class="single-qu">
+                <tr>
+                    <td style="width:80%">
+                        <h4 class="required">Question</h4>
+                        <input type="text" required>
+                    </td>
+                    <td style="width:20%; text-align: center;">
+                        <h4 class="required">Mark</h4>
+                        <input type="number" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea class="descriptive-text" placeholder="*hints" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="text-align: center;"><button class="qu-add">Add</button></td>
+                </tr>
+            </table>
+          </div>
+      <br>
+      <section class="my-questions">
+        <div class="title-qu">
+            <h2>Questions</h2>
+        </div>
+        <div class="my-qu-area">
+           <div class="qu1">
+            <h4>Question 1</h4>
+            <h5>HTML Stands for</h5>
+            <p><i class="fa fa-circle-thin"></i>&nbsp;Hyper Text Module Language</p>
+            <p><i class="fa fa-circle-thin"></i>&nbsp;Hyper Test Markup Language</p>
+            <p><i class="fa fa-circle-thin"></i>&nbsp;Hyper Text Markup Language</p>
+            <p><i class="fa fa-circle-thin"></i>&nbsp;Hyperlink Text Markup Language</p>
+            <h5>Answer</h5>
+            <p>Hyper Text Markup Language</p>
+            <h5>Mark</h5>
+            <p>1</p>
+            <div class="quBtn">
+                <button class="qu-edit">Edit</button>
+                <button class="qu-edit">Delete</button>
+            </div>
+           </div>
+           <br>
+           <div class="qu1">
+            <h4>Question 2</h4>
+            <h5>State True or False. HTML is a scripting language</h5>
+            <p><i class="fa fa-circle-thin"></i>&nbsp;True</p>
+            <p><i class="fa fa-circle-thin"></i>&nbsp;False</p>
+            <h5>Answer</h5>
+            <p>False</p>
+            <h5>Mark</h5>
+            <p>1</p>
+            <br><br>
+            <div class="space" style="margin-bottom: 12px;"></div>
+            <div class="quBtn">
+                <button class="qu-edit">Edit</button>
+                <button class="qu-edit">Delete</button>
+            </div>
+           </div>
+           <br>
+           <div class="qu1">
+            <h4>Question 3</h4>
+            <h5>List Types</h5>
+            <h5>Answer</h5>
+            <p>Ordered List<br>
+                Unordered List<br>
+                Descriptive List<br>
+            </p>
+            <h5>Mark</h5>
+            <p>2</p>
+            <br><br><br><br>
+            <div class="space" style="margin-bottom: 9px;"></div>
+            <div class="quBtn">
+                <button class="qu-edit">Edit</button>
+                <button class="qu-edit">Delete</button>
+            </div>
+           </div>
+           <br>
+        </div>
+      </section>
+      
+    </main>   
+    <script>
+        const body=document.querySelector("body"),
+        sidebar=document.querySelector("nav"),
+        sidebarToggle=body.querySelector(".sidebar-toggle");
+    
+        sidebarToggle.addEventListener("click",()=>{
+            sidebar.classList.toggle("close");
+        });
+        function openChoice(evt, choiceName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(choiceName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

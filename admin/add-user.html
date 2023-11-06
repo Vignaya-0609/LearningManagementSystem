@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+    <link rel="icon" href="../assets/images/icons8/course.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- side navabr -->
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="../assets/images/logo.png" alt="">
+            </div>
+            <span class="logo">Skillo</span>
+        </div>
+        <div class="links">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa fa-home"></i><span class="nav-name">Dashboard</span></a></li>
+                <li><a href="course-manage.html"><i class="fa fa-graduation-cap"></i><span class="nav-name">Course Management</span></a></li>
+                <li><a href="user-manage.html"><i class="fa fa-user"></i><span class="nav-name">User Management</span></a></li>
+                <li><a href="admin-report.html"><i class="fa fa-window-restore"></i><span class="nav-name">Report</span></a></li>
+            </ul>
+            <ul class="logout-links">
+                <li><a href="../index.html"><i class="fa fa-sign-out"></i><span class="nav-name">Logout</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <section class="header">
+        <div class="bar">
+            <i class="fa fa-bars sidebar-toggle"></i>
+        </div>
+        <div class="welcome-note">
+            <h3>Welcome Admin!</h3>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-area" placeholder="search">
+            <i class="fa fa-search"></i>
+        </div>   
+    </section>
+    <main class="content">
+        <!-- add new user  -->
+        <section class="add-new">
+            <div class="heading-add">
+                <div class="title">
+                    <h2>Add User</h2>
+                </div>
+            </div>
+            <div class="subtitle">
+                <a href="user-manage.html">User Management</a>/
+                <a href="add-user.html" class="active">Add User</a>
+            </div>
+            <div class="add-form">
+                <div class="form-addCourse">
+                    <form class="form-list">
+                        <div class="column">
+                            <div class="input-box">
+                                <label class="required">User Name</label>
+                                <input type="text" placeholder="User Name" required>
+                            </div>
+                            <div class="input-box">
+                                <label class="required">Password</label>
+                                <input type="password" placeholder="password" required>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="input-box">
+                                <label class="required">Email</label>
+                                <input type="email" placeholder="email address" required>
+                            </div>
+                            <div class="input-box">
+                                <div class="upload">
+                                    <label>Photo</label>
+                                    <input type="file" class="upload">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="input-box">
+                                <label class="required">Course Name</label>
+                                <div class="select-box">
+                                    <select required>
+                                      <option hidden class="fade">Select Course</option>
+                                      <option>HTML: Beginner Level</option>
+                                      <option>CSS</option>
+                                      <option>JS</option>
+                                      <option>ReactJS</option>
+                                    </select>
+                                  </div>
+                            </div>
+                            <div class="input-box">
+                                <label class="required">User Type</label>
+                                <div class="select-box">
+                                    <select required>
+                                      <option hidden class="fade">Select User Type</option>
+                                      <option>Instructor</option>
+                                      <option>Student</option>
+                                    </select>
+                                  </div>
+                            </div>
+                            
+                        </div>
+                        <div class="btn-add">
+                            <button>Add User</button>
+                        </div>
+                        <br>
+                    </form>    
+                </div>
+            </div>
+        </section>
+        
+    </main>   
+    <script>
+        const body=document.querySelector("body"),
+        sidebar=document.querySelector("nav"),
+        sidebarToggle=body.querySelector(".sidebar-toggle");
+
+    
+        sidebarToggle.addEventListener("click",()=>{
+            sidebar.classList.toggle("close");
+        });
+    </script>
+</body>
+</html>

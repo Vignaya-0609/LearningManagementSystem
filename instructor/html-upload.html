@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+    <link rel="icon" href="../assets/images/icons8/course.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- side navbar -->
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="../assets/images/logo.png" alt="">
+            </div>
+            <span class="logo">Skillo</span>
+        </div>
+        <div class="links">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa fa-home"></i><span class="nav-name">Dashboard</span></a></li>
+                <li><a href="course-delivery.html"><i class="fa fa-graduation-cap"></i><span class="nav-name">Course Deliverables</span></a></li>
+                <li><a href="create-assess.html"><i class="fa fa-list-alt"></i><span class="nav-name">Assessment</span></a></li>
+                <li><a href="report.html"><i class="fa fa-window-restore"></i><span class="nav-name">Report</span></a></li>
+                <li><a href="announce.html"><i class="fa fa-comments"></i><span class="nav-name">Communication</span></a></li>
+            </ul>
+            <ul class="logout-links">
+                <li><a href="../index.html"><i class="fa fa-sign-out"></i><span class="nav-name">Logout</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <section class="header">
+        <div class="bar">
+            <i class="fa fa-bars sidebar-toggle"></i>
+        </div>
+        <div class="welcome-note">
+            <h3>Welcome Instructor!</h3>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-area" placeholder="search">
+            <i class="fa fa-search"></i>
+        </div>   
+    </section>
+    <main class="content">
+        <!-- upload course topics -->
+        <section class="course-upload">
+            <div class="course-heading">
+                <h2>
+                <a href="course-delivery.html">Course Delivery / </a>
+                <a href="html-upload.html" class="active">HTML: Beginner Level</a>
+                </h2>
+            </div>
+            <div class="add-topic">
+                <form class="add-topics">
+                    <label>New Topic</label>
+                    <input type="text" required>
+                    <button class="addTopic">Add</button>
+                </form>
+            </div>
+        </section>
+        <!-- listed topics -->
+        <div class="accordions">
+            <!-- <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div> -->
+            <div class="edit-option">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            </div>
+            <div class="accordions-item">
+              <div class="accordions-item-header">
+                Introduction to HTML
+              </div>
+              <div class="accordions-item-body">
+                <div class="accordions-item-body-content">
+                    <div class="topics-content">
+                        <div class="upload-area">
+                            <div class="add-comment">
+                                <input type="text" placeholder="Comment Here" required>
+                                <button class="comment">Comment</button>
+                            </div>
+                                <div class="add-materials">
+                                    <button class="uploadBtn">Upload Materials</button>
+                                    <input type="file" name="myfile" />
+                                </div>
+                                <div class="add-materials">
+                                    <button class="uploadBtn">Upload Assignment</button>
+                                    <input type="file" name="myfile" />
+                                </div>
+                        </div>
+                        <br>
+                        <div class="materials">
+                            <p><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="../assets/materials/2.HTML _V1.2.pdf" target="_blank">HTML</a> &nbsp;<i class="fa fa-trash-o" style="font-size: 1rem;cursor: pointer;"></i></p>
+                            <p><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="../assets/materials/2.HTML _V1.2.pdf" target="_blank">HTML Semantics</a> &nbsp;<i class="fa fa-trash-o" style="font-size: 1rem;cursor: pointer;"></i></p>
+                            <p>Assignment 1 Submission Date : 22.10.2023 &nbsp;<i class="fa fa-trash-o" style="font-size: 1rem;cursor: pointer;"></i></p>
+                            <p><i class="fa fa-list-alt"></i> <a href="../assets/materials/2.HTML _V1.2.pdf" target="_blank">Assignment 1</a> &nbsp;<i class="fa fa-trash-o" style="font-size: 1rem;cursor: pointer;"></i></p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="edit-option">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            </div>
+            <div class="accordions-item">
+              <div class="accordions-item-header">
+                Semantics
+              </div>
+              <div class="accordions-item-body">
+                <div class="accordions-item-body-content">
+                    <div class="topics-content">
+                        <div class="upload-area">
+                            <div class="add-comment">
+                                <input type="text" placeholder="Comment Here" required>
+                                <button class="comment">Comment</button>
+                            </div>
+                            <div class="add-materials">
+                                <button class="uploadBtn">Upload Materials</button>
+                                <input type="file" name="myfile" />
+                            </div>
+                            <div class="add-materials">
+                                <button class="uploadBtn">Upload Assignment</button>
+                                <input type="file" name="myfile" />
+                            </div>
+                        </div>
+                        <br>
+                        <div class="materials">
+                            <p><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="../assets/materials/2.HTML _V1.2.pdf" target="_blank">HTML</a> &nbsp;<i class="fa fa-trash-o" style="font-size: 1rem;cursor: pointer;"></i></p>
+                            <p><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="../assets/materials/2.HTML _V1.2.pdf" target="_blank">HTML Semantics</a> &nbsp;<i class="fa fa-trash-o" style="font-size: 1rem;cursor: pointer;"></i></p>
+                            <p>Prepare well for your next assignment &nbsp;<i class="fa fa-trash-o" style="font-size: 1rem;cursor: pointer;"></i></p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="edit-option">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            </div>
+            <div class="accordions-item">
+                <div class="accordions-item-header">
+                  List
+                </div>
+                <div class="accordions-item-body">
+                  <div class="accordions-item-body-content">
+                      <div class="topics-content">
+                          <div class="upload-area">
+                              <div class="add-comment">
+                                  <input type="text" placeholder="Comment Here" required>
+                                  <button class="comment">Comment</button>
+                              </div>
+                              <div class="add-materials">
+                                  <button class="uploadBtn">Upload Materials</button>
+                                  <input type="file" name="myfile" />
+                              </div>
+                              <div class="add-materials">
+                                  <button class="uploadBtn">Upload Assignment</button>
+                                  <input type="file" name="myfile" />
+                              </div>
+                          </div>
+                          <br>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+    </main>   
+    <script>
+        const body=document.querySelector("body"),
+        sidebar=document.querySelector("nav"),
+        sidebarToggle=body.querySelector(".sidebar-toggle");
+  
+        sidebarToggle.addEventListener("click",()=>{
+            sidebar.classList.toggle("close");
+        });
+
+        const accordionItemHeaders = document.querySelectorAll(".accordions-item-header");
+
+        accordionItemHeaders.forEach(accordionItemHeader => {
+            accordionItemHeader.addEventListener("click", event => {
+                accordionItemHeader.classList.toggle("active");
+                const accordionItemBody = accordionItemHeader.nextElementSibling;
+                if(accordionItemHeader.classList.contains("active")) {
+                    accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+                }
+                else {
+                    accordionItemBody.style.maxHeight = 0;
+                }   
+            });
+        });
+    </script>
+</body>
+</html>

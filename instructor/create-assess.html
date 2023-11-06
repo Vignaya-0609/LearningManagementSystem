@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+    <link rel="icon" href="../assets/images/icons8/course.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- side navbar -->
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="../assets/images/logo.png" alt="">
+            </div>
+            <span class="logo">Skillo</span>
+        </div>
+        <div class="links">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa fa-home"></i><span class="nav-name">Dashboard</span></a></li>
+                <li><a href="course-delivery.html"><i class="fa fa-graduation-cap"></i><span class="nav-name">Course Deliverables</span></a></li>
+                <li><a href="create-assess.html"><i class="fa fa-list-alt"></i><span class="nav-name">Assessment</span></a></li>
+                <li><a href="report.html"><i class="fa fa-window-restore"></i><span class="nav-name">Report</span></a></li>
+                <li><a href="announce.html"><i class="fa fa-comments"></i><span class="nav-name">Communication</span></a></li>
+            </ul>
+            <ul class="logout-links">
+                <li><a href="../index.html"><i class="fa fa-sign-out"></i><span class="nav-name">Logout</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <section class="header">
+        <div class="bar">
+            <i class="fa fa-bars sidebar-toggle"></i>
+        </div>
+        <div class="welcome-note">
+            <h3>Welcome Instructor!</h3>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-area" placeholder="search">
+            <i class="fa fa-search"></i>
+        </div>   
+    </section>
+    <main class="content">
+        <!-- create new assessment -->
+      <section class="view-scores">
+        <div class="assess-heading">
+            <div class="assess-title">
+                <h2>Create Assessment</h2>
+            </div>
+        </div>
+      </section>
+      <section class="create-assess">
+        <form class="creation-assess">
+            <div class="column-assess">
+                <div class="input-area">
+                    <label>Code</label>
+                    <input type="text" required>
+                </div>
+                <div class="input-area">
+                    <label>Assessment Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="input-area">
+                    <label>Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="input-area">
+                    <label>Time</label>
+                    <input type="time">to<input type="time">
+                </div>
+            </div>
+            <div class="add-assess">
+                <button class="add-ass create">Create Assessment</button>
+            </div>
+        </form>
+      </section>
+      <br>
+      <section class="view-scores">
+        <div class="assess-heading">
+            <div class="assess-title">
+                <h2>Assessment</h2>
+            </div>
+        </div>
+      </section>
+      <!-- listed created assessment -->
+      <section class="create-assess">
+        <form class="creation-assess">
+            <div class="column-assess">
+                <div class="input-area">
+                    <label>Code</label>
+                    <input type="text" value="html123" disabled>
+                </div>
+                <div class="input-area">
+                    <label>Assessment Name</label>
+                    <input type="text" value="HTML Basics" disabled>
+                </div>
+                <div class="input-area">
+                    <label>Date</label>
+                    <input type="date">
+                </div>
+                <div class="input-area">
+                    <label>Time</label>
+                    <input type="time">to<input type="time">
+                </div>
+            </div>
+            <div class="add-assess">
+                <button class="add-ass"><a href="add-assess.html">Edit</a></button>
+                <button class="add-ass"><a href="#" onclick="document.querySelector('.delete_cont').style.display = 'block'">Delete</a></button>
+                <button class="add-ass"><a href="#" onclick="document.querySelector('.publish_cont').style.display = 'block'">Publish</a></button>
+            </div>
+        </form>
+      </section>
+      <br>
+      <section class="create-assess">
+        <form class="creation-assess">
+            <div class="column-assess">
+                <div class="input-area">
+                    <label>Code</label>
+                    <input type="text" value="tags123" required>
+                </div>
+                <div class="input-area">
+                    <label>Assessment Name</label>
+                    <input type="text" value="Formatting Tags" required>
+                </div>
+                <div class="input-area">
+                    <label>Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="input-area">
+                    <label>Time</label>
+                    <input type="time">to<input type="time">
+                </div>
+            </div>
+            <div class="add-assess">
+                <button class="add-ass">Edit</button>
+                <button class="add-ass">Delete</button>
+                <button class="add-ass" >Publish</button>
+            </div>
+        </form>
+      </section>
+      <br>
+      <section class="create-assess">
+        <form class="creation-assess">
+            <div class="column-assess">
+                <div class="input-area">
+                    <label>Code</label>
+                    <input type="text" value="list123" required>
+                </div>
+                <div class="input-area">
+                    <label>Assessment Name</label>
+                    <input type="text" value="Table, List" required>
+                </div>
+                <div class="input-area">
+                    <label>Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="input-area">
+                    <label>Time</label>
+                    <input type="time">to<input type="time">
+                </div>
+            </div>
+            <div class="add-assess">
+                <button class="add-ass">Edit</button>
+                <button class="add-ass">Delete</button>
+                <button class="add-ass">Publish</button>
+            </div>
+        </form>
+      </section>
+      <div class="delete_cont">
+        <span onclick="document.querySelector('.delete_cont').style.display = 'none'" class="closedel" title="close">&times;</span>
+        <div class="delete_txt">
+          <p>Are you sure you want to delete this Assessment?</p>
+        </div>
+        <div onclick="document.querySelector('.delete_cont').style.display = 'none'" class="delete_actions">
+          <button class="cancel">
+            Cancel
+          </button>
+          <button class="delete-mydelbtn">
+            Delete
+          </button>
+        </div>
+      </div>
+      <!-- popup for publish -->
+      <div class="publish_cont">
+        <span onclick="document.querySelector('.publish_cont').style.display = 'none'" class="closepublish" title="close">&times;</span>
+        <div class="publish_txt">
+          <p>Where to upload this Course?</p>
+          <div class="input-box">
+            <div class="select-box">
+                <select required  style="padding:8px">
+                  <option hidden class="fade">Select Course</option>
+                  <option>HTML: Beginner Level</option>
+                  <option>CSS</option>
+                </select>
+            </div>
+        </div>
+        </div>
+        <br>
+        <div onclick="document.querySelector('.publish_cont').style.display = 'none'" class="publish_actions">
+          <button class="cancel">
+            Cancel
+          </button>
+          <button class="confirm">
+            Publish
+          </button>
+        </div>
+      </div>
+    </main>   
+    <script>
+        const body=document.querySelector("body"),
+        sidebar=document.querySelector("nav"),
+        sidebarToggle=body.querySelector(".sidebar-toggle");
+    
+        sidebarToggle.addEventListener("click",()=>{
+            sidebar.classList.toggle("close");
+        });
+    </script>
+</body>
+</html>

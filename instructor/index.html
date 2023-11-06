@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+    <link rel="icon" href="../assets/images/icons8/course.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- side navbar -->
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="../assets/images/logo.png" alt="">
+            </div>
+            <span class="logo">Skillo</span>
+        </div>
+        <div class="links">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa fa-home"></i><span class="nav-name">Dashboard</span></a></li>
+                <li><a href="course-delivery.html"><i class="fa fa-graduation-cap"></i><span class="nav-name">Course Deliverables</span></a></li>
+                <li><a href="create-assess.html"><i class="fa fa-list-alt"></i><span class="nav-name">Assessment</span></a></li>
+                <li><a href="report.html"><i class="fa fa-window-restore"></i><span class="nav-name">Report</span></a></li>
+                <li><a href="announce.html"><i class="fa fa-comments"></i><span class="nav-name">Communication</span></a></li>
+            </ul>
+            <ul class="logout-links">
+                <li><a href="../index.html"><i class="fa fa-sign-out"></i><span class="nav-name">Logout</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <section class="header">
+        <div class="bar">
+            <i class="fa fa-bars sidebar-toggle"></i>
+        </div>
+        <div class="welcome-note">
+            <h3>Welcome Instructor!</h3>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-area" placeholder="search">
+            <i class="fa fa-search"></i>
+        </div>   
+    </section>
+    <main class="content">
+        <!-- my profile -->
+        <section class="profile">
+            <div class="profile-details">
+                <div class="profile-pic">
+                    <img src="../assets/images/avatar.png"> 
+                </div>
+                <div class="data">
+                    <div class="profile-info">
+                        <h3>Name</h3>
+                        <p>Dev</p>
+                    </div>
+                    <div class="profile-info">
+                        <h3>Email</h3>
+                        <p>dev@gmail.com</p>
+                    </div>
+                    <div class="profile-info">
+                        <h3>User Type</h3>
+                        <p>Instructor</p>
+                        <div class="btn">
+                            <button id="myBtn">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <!-- dashboard -->
+        <section class="dashboard">
+            <h2>Dashboard</h2>
+            <div class="my-dashboard">
+                <div class="card-container">
+                    <div class="card" style="cursor: pointer;" onclick="location.href='course-delivery.html'">
+                        <div class="count">
+                            <h3><span class="number">2</span>Courses</h3>
+                        </div>
+                        <div class="respective-img">
+                            <img src="../assets/images/icons8/course.png">
+                        </div>
+                    </div>
+                    <div class="card" style="cursor: pointer;" onclick="location.href='report.html'">
+                        <div class="count">
+                            <h3><span class="number">40</span>Students</h3>
+                        </div>
+                        <div class="respective-img">
+                            <img src="../assets/images/icons8/student.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="barchart">
+                    <div class="container1">
+                      <div class="chart-container">
+                        <div class="chart-item">
+                          <div class="bar1">
+                            <div style="--barSize: 20" class="bar-item" title="8 Students"></div>
+                          </div>
+                          <div class="bar-label">HTML</div>
+                        </div>
+                        <div class="chart-item">
+                          <div class="bar1">
+                            <div style="--barSize: 80" class="bar-item" title="40 Students"></div>
+                          </div>
+                          <div class="bar-label">CSS</div>
+                        </div>
+                        <!-- <div class="chart-item">
+                          <div class="bar1">
+                            <div style="--barSize: 40" class="bar-item" title="50%"></div>
+                          </div>
+                          <div class="bar-label">Deliverables</div>
+                        </div>
+                        <div class="chart-item">
+                          <div class="bar1">
+                            <div style="--barSize: 60" class="bar-item" title="60% (Submission)"></div>
+                          </div>
+                          <div class="bar-label">Assessment</div>
+                        </div> -->
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>My Profile</h2>
+              <div class="form-addCourse">
+                <form class="form-list">
+                    <div class="column">
+                        <div class="input-box">
+                            <label>User Name</label>
+                            <input type="text" placeholder="New Course Name" value="Dev" disabled required>
+                        </div>
+                        <div class="input-box">
+                            <label>Email</label>
+                            <input type="email" placeholder="Email" value="dev@gmail.com" disabled required>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="input-box">
+                            <label>User Type</label>
+                            <input type="text" placeholder="user type" value="Instructor" disabled required>
+                        </div>
+                        <div class="input-box">
+                                <label>Phone No</label>
+                                <input type="number" placeholder="Phone number">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="input-box">
+                            <div class="upload">
+                                <label>Photo</label>
+                                <input type="file" class="upload">
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <label>Education</label>
+                            <input type="text" placeholder="New Course Name" value="B.tech IT" required>
+                        </div>
+                    </div>
+                    <div class="btn-add">
+                        <button>Save</button>
+                    </div>
+                </form>    
+            </div>
+          
+          </div>
+    </main>   
+    <script>
+        const body=document.querySelector("body"),
+        sidebar=document.querySelector("nav"),
+        sidebarToggle=body.querySelector(".sidebar-toggle");
+    
+        sidebarToggle.addEventListener("click",()=>{
+            sidebar.classList.toggle("close");
+        });
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

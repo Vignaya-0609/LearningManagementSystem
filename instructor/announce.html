@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+    <link rel="icon" href="../assets/images/icons8/course.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- side navbar -->
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="../assets/images/logo.png" alt="">
+            </div>
+            <span class="logo">Skillo</span>
+        </div>
+        <div class="links">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa fa-home"></i><span class="nav-name">Dashboard</span></a></li>
+                <li><a href="course-delivery.html"><i class="fa fa-graduation-cap"></i><span class="nav-name">Course Deliverables</span></a></li>
+                <li><a href="create-assess.html"><i class="fa fa-list-alt"></i><span class="nav-name">Assessment</span></a></li>
+                <li><a href="report.html"><i class="fa fa-window-restore"></i><span class="nav-name">Report</span></a></li>
+                <li><a href="announce.html"><i class="fa fa-comments"></i><span class="nav-name">Communication</span></a></li>
+            </ul>
+            <ul class="logout-links">
+                <li><a href="../index.html"><i class="fa fa-sign-out"></i><span class="nav-name">Logout</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <section class="header">
+        <div class="bar">
+            <i class="fa fa-bars sidebar-toggle"></i>
+        </div>
+        <div class="welcome-note">
+            <h3>Welcome Instructor!</h3>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-area" placeholder="search">
+            <i class="fa fa-search"></i>
+        </div>   
+    </section>
+    <main class="content">
+        <!-- communication announcement -->
+             <section class="communication">
+                <div class="communication-heading">
+                    <div class="communication-title">
+                        <h2>Communication</h2>
+                    </div>
+                    <div class="communication-title">
+                        <a href="announce.html" class="active">Announcement</a>
+                        <a href="chat.html">Chat</a>
+                    </div>
+                </div>
+             </section>
+             <section class="add-announce">
+                <form class="send-announce">
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Instructor</label>
+                            <input type="text" value="Dev" disabled>
+                        </div>
+                        <div class="input-box">
+                            <label>Course Name</label>
+                            <div class="select-box">
+                                <select required>
+                                  <option hidden class="fade">Select Course</option>
+                                  <option>HTML: Beginner Level</option>
+                                  <option>CSS</option>
+                                </select>
+                              </div>
+                        </div>            
+                    </div>
+                    <textarea placeholder="Add new Announcement here"></textarea>
+                    <button class="send">Send</button>
+                </form>
+             </section>
+             <section class="action-announce">
+                <table class="announce-action">
+                    <tr>
+                        <th width="20%">HTML: Begginner Level</th>
+                        <td>Hiii Team, get ready for your HTML Assessment</td>
+                        <td><button id="myBtn" class="delete"><i class="fa fa-pencil-square-o"></i></button></td>
+                        <td><button class="delete"><i class="fa fa-trash-o" style="font-size: 1.25rem;"></i></button></td>
+                    </tr>
+                    <tr>
+                        <th>HTML: Begginner Level</th>
+                        <td>Just a reminder that we are 3 days away from your final project being due.</td>
+                        <td><button class="delete"><i class="fa fa-pencil-square-o"></i></button></td>
+                        <td><button class="delete"><i class="fa fa-trash-o" style="font-size: 1.25rem;"></i></button></td>
+                    </tr>
+                    <tr>
+                        <th>HTML: Begginner Level</th>
+                        <td>Each module contains readings, lecture videos, and assignments, with corresponding due dates. • Other Menu Items: Be sure to browse each item on the menu to become familiar with the location of different aspects of this course.</td>
+                        <td><button class="delete"><i class="fa fa-pencil-square-o"></i></button></td>
+                        <td><button class="delete"><i class="fa fa-trash-o" style="font-size: 1.25rem;"></i></button></td>
+                    </tr>
+                    <tr>
+                        <th>CSS</th>
+                        <td>Hiii Team, get ready for your Assessment 1</td>
+                        <td><button class="delete"><i class="fa fa-pencil-square-o"></i></button></td>
+                        <td><button class="delete"><i class="fa fa-trash-o" style="font-size: 1.25rem;"></i></button></td>
+                    </tr>
+
+                </table>
+             </section>
+             <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <br>
+                  <section class="add-announce" style="box-shadow: 0 0 0 0;">
+                    <form class="send-announce">
+                        <div class="column">
+                            <div class="input-box">
+                                <label>Instructor</label>
+                                <input type="text" value="Dev" disabled>
+                            </div>
+                            <div class="input-box">
+                                <label>Course Name</label>
+                                <div class="select-box">
+                                    <select required>
+                                      <option hidden class="fade">Select Course</option>
+                                      <option>HTML: Beginner Level</option>
+                                      <option>CSS</option>
+                                    </select>
+                                  </div>
+                            </div>            
+                        </div>
+                        <textarea placeholder="Add new Announcement here"></textarea>
+                        <button class="send">Send</button>
+                    </form>
+                 </section>
+              
+              </div>
+    </main>   
+    <script>
+        const body=document.querySelector("body"),
+        sidebar=document.querySelector("nav"),
+        sidebarToggle=body.querySelector(".sidebar-toggle");
+
+        sidebarToggle.addEventListener("click",()=>{
+            sidebar.classList.toggle("close");
+        });
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+             modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

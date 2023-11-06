@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+    <link rel="icon" href="../assets/images/icons8/course.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- side navbar -->
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="../assets/images/logo.png" alt="">
+            </div>
+            <span class="logo">Skillo</span>
+        </div>
+        <div class="links">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa fa-home"></i><span class="nav-name">Dashboard</span></a></li>
+                <li><a href="enrolled-courses.html"><i class="fa fa-graduation-cap"></i><span class="nav-name">Enrolled Courses</span></a></li>
+                <li><a href="stu-assess.html"><i class="fa fa-list-alt"></i><span class="nav-name">Assessment</span></a></li>
+                <li><a href="announce-view.html"><i class="fa fa-comments"></i><span class="nav-name">Communication</span></a></li>
+            </ul>
+            <ul class="logout-links">
+                <li><a href="../index.html"><i class="fa fa-sign-out"></i><span class="nav-name">Logout</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <section class="header">
+        <div class="bar">
+            <i class="fa fa-bars sidebar-toggle"></i>
+        </div>
+        <div class="welcome-note">
+            <h3>Welcome Student!</h3>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-area" placeholder="search">
+            <i class="fa fa-search"></i>
+        </div>   
+    </section>
+    <main class="content">
+        <!-- listed topics -->
+        <section class="course-upload">
+            <div class="course-heading">
+                <h2>
+                <a href="enrolled-courses.html">Enrolled Courses</a> /
+                <a href="html-view.html" class="active">HTML: Beginner Level</a>
+                </h2>
+            </div>
+        </section>
+        <br>
+        <div class="accordions">
+            <div class="accordions-item">
+              <div class="accordions-item-header">
+                Introduction to HTML
+              </div>
+              <div class="accordions-item-body">
+                <div class="accordions-item-body-content">
+                    <div class="topics-content">
+                        <div class="materials">
+                            <p><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="../assets/materials/2.HTML _V1.2.pdf" target="_blank">HTML</a></p>
+                            <p><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="../assets/materials/2.HTML _V1.2.pdf" target="_blank">HTML Semantics</a></p>
+                            <p>Assignment 1 Submission Date : 22.10.2023</p>
+                            <p><i class="fa fa-list-alt"></i> <a href="../assets/materials/2.HTML _V1.2.pdf" target="_blank">Assignment 1</a><br>
+                                <div class="add-materials">
+                                    <button class="uploadBtn">Upload Materials</button>
+                                    <input type="file" name="myfile" />
+                                </div></p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordions-item">
+              <div class="accordions-item-header">
+                Semantics
+              </div>
+              <div class="accordions-item-body">
+                <div class="accordions-item-body-content">
+                    <div class="topics-content">
+                        <div class="materials">
+                            <p><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="../assets/materials/2.HTML _V1.2.pdf" target="_blank">HTML</a></p>
+                            <p><i class="fa fa-file-pdf-o" aria-hidden="true"></i> <a href="../assets/materials/2.HTML _V1.2.pdf" target="_blank">HTML Semantics</a></p>
+                            <p>Prepare well for your next assignment</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordions-item">
+                <div class="accordions-item-header">
+                  List
+                </div>
+                <div class="accordions-item-body">
+                  <div class="accordions-item-body-content">
+                      <div class="topics-content">
+                      </div>
+                  </div>
+                </div>
+            </div>
+    </main>   
+    <script>
+        const body=document.querySelector("body"),
+        sidebar=document.querySelector("nav"),
+        sidebarToggle=body.querySelector(".sidebar-toggle");
+   
+        sidebarToggle.addEventListener("click",()=>{
+            sidebar.classList.toggle("close");
+        });
+
+        const accordionItemHeaders = document.querySelectorAll(".accordions-item-header");
+
+        accordionItemHeaders.forEach(accordionItemHeader => {
+            accordionItemHeader.addEventListener("click", event => {
+                accordionItemHeader.classList.toggle("active");
+                const accordionItemBody = accordionItemHeader.nextElementSibling;
+                if(accordionItemHeader.classList.contains("active")) {
+                    accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+                }
+                else {
+                    accordionItemBody.style.maxHeight = 0;
+                } 
+            });
+        });
+    </script>
+</body>
+</html>

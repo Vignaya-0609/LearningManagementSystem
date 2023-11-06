@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+    <link rel="icon" href="../assets/images/icons8/course.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- side navbar -->
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="../assets/images/logo.png" alt="">
+            </div>
+            <span class="logo">Skillo</span>
+        </div>
+        <div class="links">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa fa-home"></i><span class="nav-name">Dashboard</span></a></li>
+                <li><a href="course-delivery.html"><i class="fa fa-graduation-cap"></i><span class="nav-name">Course Deliverables</span></a></li>
+                <li><a href="create-assess.html"><i class="fa fa-list-alt"></i><span class="nav-name">Assessment</span></a></li>
+                <li><a href="report.html"><i class="fa fa-window-restore"></i><span class="nav-name">Report</span></a></li>
+                <li><a href="announce.html"><i class="fa fa-comments"></i><span class="nav-name">Communication</span></a></li>
+            </ul>
+            <ul class="logout-links">
+                <li><a href="../index.html"><i class="fa fa-sign-out"></i><span class="nav-name">Logout</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <section class="header">
+        <div class="bar">
+            <i class="fa fa-bars sidebar-toggle"></i>
+        </div>
+        <div class="welcome-note">
+            <h3>Welcome Instructor!</h3>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-area" placeholder="search">
+            <i class="fa fa-search"></i>
+        </div>   
+    </section>
+    <main class="content">
+        <!-- course deliverables -->
+        <section class="course-management">
+            <div class="heading">
+                <div class="title">
+                    <h2>Course Deliverables</h2>
+                </div>
+            </div>
+            <div class="course-card-container">
+                <div class="course-card">
+                    <div class="card-title html-card" style="cursor: pointer;" onclick="location.href='html-upload.html'">
+                        
+                    </div>
+                    <div class="description">
+                        <div class="desc-title">
+                            <h4>HTML: Beginner Level</h4>
+                        </div>
+                        <div class="desc-content">
+                            <p>It is one of the most basic building blocks of every website.</p>
+                        </div>
+                        <div class="desc-duration">
+                            <div class="duration">
+                                <h5>Duration</h5>
+                                <p>40 hrs</p>
+                            </div>
+                        </div>
+                        <div class="upload-btn">
+                            <a href="html-upload.html" class="btn"><i class="fa fa-cloud-upload"></i> Upload Materials</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="card-title css-card" style="cursor: pointer;" onclick="location.href='html-upload.html'">
+                        
+                    </div>
+                    <div class="description">
+                        <div class="desc-title">
+                            <h4>CSS</h4>
+                        </div>
+                        <div class="desc-content">
+                            <p>Style sheet language used for describing the presentation.</p>
+                        </div>
+                        <div class="desc-duration">
+                            <div class="duration">
+                                <h5>Duration</h5>
+                                <p>60 hrs</p>
+                            </div>
+                        </div>
+                        <div class="upload-btn">
+                            <a href="#" class="btn"><i class="fa fa-cloud-upload"></i> Upload Materials</a>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            </div>
+        </section>
+    </main>   
+    <script>
+        const body=document.querySelector("body"),
+        sidebar=document.querySelector("nav"),
+        sidebarToggle=body.querySelector(".sidebar-toggle");
+    
+        sidebarToggle.addEventListener("click",()=>{
+            sidebar.classList.toggle("close");
+        });
+    </script>
+</body>
+</html>

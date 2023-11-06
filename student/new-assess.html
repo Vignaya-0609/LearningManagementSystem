@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+    <link rel="icon" href="../assets/images/icons8/course.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- side navbar -->
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="../assets/images/logo.png" alt="">
+            </div>
+            <span class="logo">Skillo</span>
+        </div>
+        <div class="links">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa fa-home"></i><span class="nav-name">Dashboard</span></a></li>
+                <li><a href="enrolled-courses.html"><i class="fa fa-graduation-cap"></i><span class="nav-name">Enrolled Courses</span></a></li>
+                <li><a href="stu-assess.html"><i class="fa fa-list-alt"></i><span class="nav-name">Assessment</span></a></li>
+                <li><a href="announce-view.html"><i class="fa fa-comments"></i><span class="nav-name">Communication</span></a></li>
+            </ul>
+            <ul class="logout-links">
+                <li><a href="../index.html"><i class="fa fa-sign-out"></i><span class="nav-name">Logout</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <section class="header">
+        <div class="bar">
+            <i class="fa fa-bars sidebar-toggle"></i>
+        </div>
+        <div class="welcome-note">
+            <h3>Welcome Student!</h3>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-area" placeholder="search">
+            <i class="fa fa-search"></i>
+        </div>   
+    </section>
+    <main class="content">
+        <!-- test -->
+        <section class="test">
+            <section class="test-heading">
+                <h2>HTML Basics</h2>
+            </section>
+            <section class="timing">
+                <h4>20:00 left</h4>
+            </section>
+            <br>
+            <section class="test-qu">
+                <div class="questionsTest">
+                    <div class="quone">
+                        <div class="qu-tag">
+                            <h4>1. HTML Stands for</h4>
+                            <h5>Mark: 1</h5>
+                        </div>
+                        
+                        <form class="my-answer">
+                            <input type="radio" name="answer" value="ans1">&nbsp;Hyper Text Module Language<br>
+                            <input type="radio" name="answer" value="ans2">&nbsp;Hyper Test Markup Language<br>
+                            <input type="radio" name="answer" value="ans3">&nbsp;Hyper Text Markup Language<br>
+                            <input type="radio" name="answer" value="ans4">&nbsp;Hyperlink Text Markup Language<br>
+                        </form>
+                    </div>
+                    <div class="quone">
+                        <div class="qu-tag">
+                            <h4>2. State whether the given question is true or false. !DOCTYPE is case sensitive</h4>
+                            <h5>Mark: 1</h5>
+                        </div>
+                        <form class="my-answer">
+                            <input type="radio" name="answer" value="ans1">&nbsp;True<br>
+                            <input type="radio" name="answer" value="ans2">&nbsp;False<br>
+                        </form>
+                    </div>
+                    <div class="quone">
+                        <div class="qu-tag">
+                            <h4>3. Describe the types of list</h4>
+                            <h5>Mark: 2</h5>
+                        </div>
+                        
+                        <form class="my-answer">
+                            <textarea class="my-text-ans"></textarea>
+                        </form>
+                    </div>
+                    <div class="submit-my-test">
+                        <button class="submitbtn">Submit Test</button>
+                    </div>
+                </div>
+                
+                <div class="fixed-summary">
+                    <div class="fixed-content">
+                        <div class="time-left">
+                            <h4>Time Left</h4>
+                            <time>45:30</time>
+                        </div>
+                        <div class="fixed-name">
+                            <div class="fixed-code-name">
+                                <h4>Assessment Code</h4>
+                                <p>html123</p>
+                            </div>
+                            <div class="fixed-ass-name">
+                                <h4>Name</h4>
+                                <p>HTML Basics</p>
+                            </div>
+                        </div>
+                        <div class="circle-qu">
+                            <h4>No of Questions</h4>
+                            <div class="circles">
+                                <span class="circle">3</span>
+                            </div>
+                        </div>
+                        <div class="ass-summary">
+                            <h4>Summary</h4>
+                            <div class="ass-list">
+                                <h5>Attempt:</h5>
+                                <h5>0</h5>
+                            </div>
+                            <div class="ass-list">
+                                <h5>Unattempt:</h5>
+                                <h5>3</h5>
+                            </div>
+                        </div>
+                        <div class="end-test">
+                            <button class="endbtn">Submit Test</button>
+                            <button class="endbtn">End Test</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>   
+    <script>
+        const body=document.querySelector("body"),
+        sidebar=document.querySelector("nav"),
+        sidebarToggle=body.querySelector(".sidebar-toggle");
+          
+        sidebarToggle.addEventListener("click",()=>{
+            sidebar.classList.toggle("close");
+        });
+
+    </script>
+</body>
+</html>

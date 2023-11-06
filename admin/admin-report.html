@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS</title>
+    <link rel="icon" href="../assets/images/icons8/course.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- side navbar -->
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="../assets/images/logo.png" alt="">
+            </div>
+            <span class="logo">Skillo</span>
+        </div>
+        <div class="links">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa fa-home"></i><span class="nav-name">Dashboard</span></a></li>
+                <li><a href="course-manage.html"><i class="fa fa-graduation-cap"></i><span class="nav-name">Course Management</span></a></li>
+                <li><a href="user-manage.html"><i class="fa fa-user"></i><span class="nav-name">User Management</span></a></li>
+                <li><a href="admin-report.html"><i class="fa fa-window-restore"></i><span class="nav-name">Report</span></a></li>
+            </ul>
+            <ul class="logout-links">
+                <li><a href="../index.html"><i class="fa fa-sign-out"></i><span class="nav-name">Logout</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <section class="header">
+        <div class="bar">
+            <i class="fa fa-bars sidebar-toggle"></i>
+        </div>
+        <div class="welcome-note">
+            <h3>Welcome Admin!</h3>
+        </div>
+        <div class="search-box">
+            <input type="text" class="search-area" placeholder="search">
+            <i class="fa fa-search"></i>
+        </div>   
+    </section>
+    <!-- main content -->
+    <main class="content">
+        <!-- student report -->
+        <section class="stu-report">
+            <div class="report-heading">
+                <h2>Student Report</h2>
+            </div>
+            <section class="accordion">
+                <div class="tab" style="background-color: #f8fafb;">
+                  <input type="checkbox" name="accordion-1" id="cb1">
+                  <label for="cb1" class="tab__label">HTML: Beginner Level</label>
+                  <div class="tab__content">
+                    <br>
+                    <div class="user-details" style="background-color: #f8fafb;">
+                        <table class="stu-report-eva">
+                            <tr>
+                                <td colspan="7">
+                                    <button class="export">Export as csv</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>S.No</th>
+                                <th>Student Name</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Completion %</th>
+                                <th>Badges</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Anu</td>
+                                <td>21-09-2023</td>
+                                <td>-</td>
+                                <td>88%</td>
+                                <td>200</td>
+                                <td><button class="evaBtn">Download</button></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Manju</td>
+                                <td>20-09-2023</td>
+                                <td>-</td>
+                                <td>80%</td>
+                                <td>180</td>
+                                <td><button class="evaBtn">Download</button></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Pooja</td>
+                                <td>14-09-2023</td>
+                                <td>-</td>
+                                <td>94%</td>
+                                <td>240</td>
+                                <td><button class="evaBtn">Download</button></td>
+                            </tr>
+                        </table>   
+                    </div>
+                </div>
+                <br>
+                <div class="tab" style="background-color: #f8fafb;">
+                  <input type="checkbox" name="accordion-1" id="cb2">
+                  <label for="cb2" class="tab__label">CSS</label>
+                  <div class="tab__content">
+                    <br>
+                    <div class="user-details" style="background-color: #f8fafb;">
+                        <table class="stu-report-eva">
+                            <tr>
+                                <td colspan="7">
+                                    <button class="export">Export as csv</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>S.No</th>
+                                <th>Student Name</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Completion %</th>
+                                <th>Badges</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Anu</td>
+                                <td>21-09-2023</td>
+                                <td>-</td>
+                                <td>88%</td>
+                                <td>200</td>
+                                <td><button class="evaBtn">Download</button></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Manju</td>
+                                <td>20-09-2023</td>
+                                <td>-</td>
+                                <td>80%</td>
+                                <td>180</td>
+                                <td><button class="evaBtn">Download</button></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Pooja</td>
+                                <td>14-09-2023</td>
+                                <td>-</td>
+                                <td>94%</td>
+                                <td>240</td>
+                                <td><button class="evaBtn">Download</button></td>
+                            </tr>
+                        </table>   
+                    </div> 
+                </div>
+                <br>
+                <div class="tab" style="background-color: #f8fafb;">
+                    <input type="checkbox" name="accordion-1" id="cb3">
+                    <label for="cb3" class="tab__label">JavaScript</label>
+                    <div class="tab__content">
+                        <br>
+                    <div class="user-details" style="background-color: #f8fafb;">
+                        <table class="stu-report-eva">
+                            <tr>
+                                <td colspan="7">
+                                    <button class="export">Export as csv</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>S.No</th>
+                                <th>Student Name</th>
+                                <th>Start Date</th>
+                                <th>End Date</th>
+                                <th>Completion %</th>
+                                <th>Badges</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Anu</td>
+                                <td>21-09-2023</td>
+                                <td>-</td>
+                                <td>88%</td>
+                                <td>200</td>
+                                <td><button class="evaBtn">Download</button></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Manju</td>
+                                <td>20-09-2023</td>
+                                <td>-</td>
+                                <td>80%</td>
+                                <td>180</td>
+                                <td><button class="evaBtn">Download</button></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Pooja</td>
+                                <td>14-09-2023</td>
+                                <td>-</td>
+                                <td>94%</td>
+                                <td>240</td>
+                                <td><button class="evaBtn">Download</button></td>
+                            </tr>
+                        </table>   
+                    </div> 
+                    </div>
+                  </div>
+                  <br>
+                  <div class="tab" style="background-color: #f8fafb;">
+                    <input type="checkbox" name="accordion-1" id="cb4">
+                    <label for="cb4" class="tab__label">ReactJS</label>
+                    <div class="tab__content">
+                        <br>
+                        <div class="user-details" style="background-color: #f8fafb;">
+                            <table class="stu-report-eva">
+                                <tr>
+                                    <td colspan="7">
+                                        <button class="export">Export as csv</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="15%">S.No</th>
+                                    <th width="20%">Student Name</th>
+                                    <th width="15%">Start Date</th>
+                                    <th width="15%">End Date</th>
+                                    <th width="10%">Completion %</th>
+                                    <th width="10%">Badges</th>
+                                    <th width="15%">Action</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Anu</td>
+                                    <td>21-09-2023</td>
+                                    <td>-</td>
+                                    <td>88%</td>
+                                    <td>200</td>
+                                    <td><button class="evaBtn">Download</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Manju</td>
+                                    <td>20-09-2023</td>
+                                    <td>-</td>
+                                    <td>80%</td>
+                                    <td>180</td>
+                                    <td><button class="evaBtn">Download</button></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Pooja</td>
+                                    <td>14-09-2023</td>
+                                    <td>-</td>
+                                    <td>94%</td>
+                                    <td>240</td>
+                                    <td><button class="evaBtn">Download</button></td>
+                                </tr>
+                            </table>   
+                        </div> 
+                    </div>
+                  </div>
+                  <br>
+              </section>
+        </section>
+    </main>  
+    
+    <script>
+        const body=document.querySelector("body"),
+        sidebar=document.querySelector("nav"),
+        sidebarToggle=body.querySelector(".sidebar-toggle");
+    
+        sidebarToggle.addEventListener("click",()=>{
+            sidebar.classList.toggle("close");
+        });
+    </script>
+</body>
+</html>
